@@ -38,12 +38,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee {" +
-                "personId = " + personId +
-                ", fullName = " + fullName  +
-                ", salary = " + salary +
-                ", departmentId = " + departmentId +
-                '}';
+        return "Employee {" + "Id сотрудника = " + personId + ", ФИО сотрудника = " + fullName  + ", зарплата сотрудника= " + salary + ", отдел сотрудника = " + departmentId + '}';
     }
 
     public int getPersonId() {
