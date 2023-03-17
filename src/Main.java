@@ -1,4 +1,17 @@
 public class Main {
+    private static void printAllEmployees(Employee[] employees) {
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println(employees[i].getFullName());
+        }
+    }
+
+    public static void printAllSalaryEmployees(Employee[] employees) {
+        int allSalaries = 0;
+        for (int i = 0; i < employees.length; i++) {
+            allSalaries = allSalaries + employees[i].getSalary();
+        }
+    }
+
     public static void main(String[] args) {
         Employee[] employees = new Employee[10];
         int allSalaries = 0;
@@ -18,6 +31,7 @@ public class Main {
 
         int minimalEmployeeSalary = employees[0].getSalary();
         int maximumEmployeeSalary = employees[0].getSalary();
+
 
         for (int i = 0; i < employees.length; i++) {
             System.out.println(employees[i]);
@@ -53,9 +67,7 @@ public class Main {
 
         System.out.println();
 
-        for (int i = 0; i<employees.length;i++){
-            System.out.println(employees[i].getFullName());
-        }
-
+        printAllEmployees(employees);
+        printAllSalaryEmployees(employees);
     }
 }

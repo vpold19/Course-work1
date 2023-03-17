@@ -5,12 +5,14 @@ public class Employee {
     private int personId;
     private int departmentId;
 
+
     public Employee(String fullName, int salary, int departmentId) {
         this.fullName = fullName;
         this.salary = salary;
         this.departmentId = departmentId;
         this.personId = personIdInc++;
     }
+
 
     public String getFullName() {
         return this.fullName;
@@ -44,5 +46,7 @@ public class Employee {
     public int getPersonId() {
         return this.personId;
     }
-}
+
+    }
+
 
